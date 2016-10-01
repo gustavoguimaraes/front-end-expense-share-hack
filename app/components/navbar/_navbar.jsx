@@ -15,7 +15,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className='navbar'>
-        <div className='navbar-header'>Expense Share Hack</div>
+        <div className='navbar-header'>xPense Share Hack</div>
         <div className='navbar-user-section' onMouseEnter={ this._handleDropdown } onMouseLeave={ this._handleDropdown } >
           <div className='avatar-round-micro' />
           <div>
@@ -26,6 +26,7 @@ class Navbar extends React.Component {
           { this.renderDropdown() }
         </div>
       </div>
+
     );
   }
 
