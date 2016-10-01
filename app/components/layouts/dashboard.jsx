@@ -40,6 +40,28 @@ const Dashboard = () => {
 
 
       </div>
+      <div>
+        <div className='mainEvent'>
+          <p>Closest stations provided by DB API</p>
+          <p>Hint: Click on them to read more</p>
+
+          <iframe src="http://www.css3.se/2016/10/01/info-about-berlin-css-meetups/">
+          </iframe>
+
+          <div>
+            <h2>Select amount</h2>
+            <label>Sum € :</label>
+
+
+
+            <label>Settle date</label>
+            <input type='date' />
+            <button className='btn btn-success btn-lg'>Create!</button>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   );
 };
