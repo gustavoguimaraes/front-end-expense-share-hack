@@ -44,8 +44,9 @@ const Dashboard = () => {
         <div className='mainEvent'>
           <p>Closest stations provided by DB API</p>
           <p>Hint: Click on them to read more</p>
+          <h3>You have decided to travel to: <b className="travelInfoLink">Berlin</b></h3>
 
-          <iframe src="http://www.css3.se/2016/10/01/info-about-berlin-css-meetups/">
+          <iframe className="travelInfo" src="http://www.css3.se/2016/10/01/info-about-berlin-css-meetups/">
           </iframe>
 
           <div>
