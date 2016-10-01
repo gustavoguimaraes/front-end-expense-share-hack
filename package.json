@@ -25,6 +25,7 @@
     "node-sass": "^3.4.0",
     "pwny": "~0.3.0",
     "react": "~15.2.0",
+    "react-bootstrap": "^0.30.3",
     "react-dom": "~15.2.0",
     "react-redux": "~4.4.0",
     "react-router": "~2.5.0",
