@@ -1,0 +1,12 @@
+// basic styles
+@import 'basic/variables';
+@import 'basic/fonts'; 
+@import 'basic/mixins';
+@import 'basic/base';
+
+// common styles
+@import 'common/common-elements';
+@import 'common/common-modifiers';
+
+// components' styles
+@import 'components/navbar';

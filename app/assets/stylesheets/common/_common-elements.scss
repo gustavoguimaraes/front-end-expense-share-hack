@@ -1,0 +1,21 @@
+// common elements, for example buttons, inputs etc.
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+// images:
+
+.avatar-round-micro {
+  border-radius: 50%;
+  @include dimensions(51px, 51px);
+  @include background-props(url('http://bit.ly/2cekMcL'), no-repeat, auto 55px, center);
+}

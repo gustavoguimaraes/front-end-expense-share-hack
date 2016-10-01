@@ -1,0 +1,36 @@
+// navbar
+.navbar {
+  z-index: 9999;
+  box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.3);
+  @extend .flexbox-row-space-between;
+  span {
+    color: $color-light;
+  }
+}
+
+.navbar-header {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.navbar-user-section {
+  position: relative;
+  @extend .flexbox-row-space-around;
+  width: 235px;
+  margin: auto 0;
+  div {
+    margin: auto 0;
+  }
+}
+
+.nav-dropdown {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  top: 65px;
+  border: 1px solid grey;
+  div {
+    border-top: 1px solid grey;
+  }
+}
