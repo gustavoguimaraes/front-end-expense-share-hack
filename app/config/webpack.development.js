@@ -41,7 +41,7 @@ module.exports = {
   output: {
     filename:   'bundle.js',
     path:       './dist',
-    publicPath: 'http://pollinate.dev:8080/'
+    publicPath: 'http://localhost:8080/'
   },
   plugins: [
     new HtmlWebpackPlugin({ template: 'app/config/templates/index.html' }),

@@ -2,6 +2,8 @@ import agent from 'superagent';
 import defaults from 'superagent-defaults';
 import humps from 'humps';
 import promise from 'superagent-promise';
+import dotenv from 'dotenv';
+dotenv.config();
 
 // lib
 import jwtFromLocalStorage from '../../lib/jwt-from-local-storage';
