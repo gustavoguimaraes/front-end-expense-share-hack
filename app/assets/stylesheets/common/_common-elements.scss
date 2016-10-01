@@ -13,27 +13,17 @@
 }
 
 // images:
-
 .avatar-round-micro {
   border-radius: 50%;
   @include dimensions(51px, 51px);
   @include background-props(url('http://bit.ly/2dkTO2U'), no-repeat, auto 55px, center);
 }
 
-.avatar-round-micro-1 {
+.avatar-round-micro-mini {
   border-radius: 50%;
-  @include dimensions(51px, 51px);
-  @include background-props(url('http://orig02.deviantart.net/35c6/f/2015/238/5/f/avatar_trex_by_bgiffo-d9784ij.jpg'), no-repeat, auto 55px, center);
+  @include dimensions(25px, 25px);
+  @include background-props(url('http://bit.ly/2dkTO2U'), no-repeat, auto 55px, center);
 }
-
-.mainEvent {
-  margin: 0 auto;
-  width: 600px;
-  height: 400px;
-  border: dashed green;
-
-}
-
 
 .avatar-round-micro-friend {
   border-radius: 50%;
@@ -41,9 +31,24 @@
   @include background-props(url('http://orig02.deviantart.net/35c6/f/2015/238/5/f/avatar_trex_by_bgiffo-d9784ij.jpg'), no-repeat, auto 55px, center);
 }
 
+.mainEvent {
+  position: absolute;
+  right: 30px;
+  display: inline-block;
+  height: 400px;
+  border: dashed green;
+}
 
 .friendsList {
-  position: relative;
-  top: -300px;
-  width:100px;
+  width: auto;
+  display: inline-block;
+}
+
+li {
+ list-style-type: none;
+}
+
+.participants {
+  position: absolute;
+  left: 421px;
 }
