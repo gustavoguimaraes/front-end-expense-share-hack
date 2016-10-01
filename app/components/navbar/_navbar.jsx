@@ -26,6 +26,7 @@ class Navbar extends React.Component {
           { this.renderDropdown() }
         </div>
       </div>
+  
     );
   }
 
