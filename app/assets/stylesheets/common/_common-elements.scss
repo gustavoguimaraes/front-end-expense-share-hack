@@ -1,7 +1,15 @@
 // common elements, for example buttons, inputs etc.
 body {
 color: black;
-
+background: rgba(226,226,226,1);
+background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 29%, rgba(219,219,219,1) 43%, rgba(209,209,209,1) 60%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(29%, rgba(226,226,226,1)), color-stop(43%, rgba(219,219,219,1)), color-stop(60%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 29%, rgba(219,219,219,1) 43%, rgba(209,209,209,1) 60%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 29%, rgba(219,219,219,1) 43%, rgba(209,209,209,1) 60%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 29%, rgba(219,219,219,1) 43%, rgba(209,209,209,1) 60%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 29%, rgba(219,219,219,1) 43%, rgba(209,209,209,1) 60%, rgba(254,254,254,1) 100%);
+opacity: 0.8;
+height: 1500px;
 }
 .caret {
   display: inline-block;
@@ -36,13 +44,16 @@ color: black;
 
 .mainEvent {
   border-radius:  5px;
-  border: 3px lightgrey solid;
+  border: 3px navy solid;
   padding: 10px;
 }
 
 .friendsList {
   width: auto;
   display: inline-block;
+  border:1px solid lightgrey;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 li {

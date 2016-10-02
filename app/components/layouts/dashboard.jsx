@@ -29,7 +29,7 @@ const Dashboard = () => {
      <div className='mainEvent'>
      <div className="row">
      <div className="col-md-6 col-md-offset-3">
-              <h1>Create event!</h1>
+              <h1>Create an event to share expenses with your friends</h1>
                 <h2>Select amount</h2>
                 <label>Sum € :</label>
                 <input className="form-control" type='text' />
