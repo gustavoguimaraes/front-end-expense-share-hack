@@ -23,18 +23,18 @@ class Step3 extends React.Component {
           <h3>You have traveled to: <b className='travelInfoLink'>Berlin</b></h3>
           <div>
             <h2>Select amount</h2>
-            <h4>Total budget 150 € :</h4>
-            <h4>Total budget 130 € was spent</h4>
+            <h4>Total budget was: <b> 150 € </b></h4>
+            <h4>Of that <b>130 €</b> was spent</h4>
 
             <h4>Settle date</h4>
           <h5>  2016-10-13 </h5>
             <div className="col-md-8">
-
             Results:
             <ListFriends name='Evelyn' /> 10+
             <ListFriends name='T-rex' /> 10+
             <br />
-            <button className='btn btn-success btn-lg'>Review and accept</button>
+              <Link to={ '/step-4' }><button className='btn btn-success btn-lg'>Review and accept</button>
+              </Link>
             </div>
           </div>
         </div>
