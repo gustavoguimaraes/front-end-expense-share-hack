@@ -51,13 +51,37 @@ const Dashboard = () => {
 
           <div>
             <h2>Select amount</h2>
-            <label>Sum € :</label>
+            <label>Total budget 150 € :</label>
 
 
 
             <label>Settle date</label>
-            <input type='date' />
-            <button className='btn btn-success btn-lg'>Create!</button>
+            2016-10-13
+            <DashboardListFriends name='Test3' /> 14
+            <DashboardListFriends name='Test4' /> 18
+            <button className='btn btn-success btn-lg'>Settle!</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div>
+        <div className='settlement'>
+          <p>Hint: Click on them to read more</p>
+          <h3>You have traveled to: <b className="travelInfoLink">Berlin</b></h3>
+        <div>
+            <h2>Select amount</h2>
+            <span>Total budget 150 € :</span>
+            <span>Total budget 130 € was spent</span>
+
+            <label>Settle date</label>
+            2016-10-13
+
+            Results:
+            <DashboardListFriends name='Test3' /> 10+
+            <DashboardListFriends name='Test4' /> 10+
+            <button className='btn btn-success btn-lg'>Review and accept</button>
           </div>
         </div>
 
