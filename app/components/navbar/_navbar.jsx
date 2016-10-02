@@ -16,7 +16,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className='navbar'>
-        <div className='navbar-header'><span className="firstLetter">x</span>Pense Share Hack</div>
+        <div className='navbar-header'><span className="firstLetter">x</span>Pense Share!</div>
         <div className='navbar-user-section' onMouseEnter={ this._handleDropdown } onMouseLeave={ this._handleDropdown } >
           <div className='avatar-round-micro' />
           <div>

@@ -42,11 +42,11 @@ class Step2 extends React.Component {
           </div>
           <div>
             <h2>Select amount</h2>
-            <h4>Total budget was: <b> 150 € </b></h4>
+            <h4>Total budget is: <b> 150 € </b></h4>
 
             <h2>Settle date: 2016-10-13</h2>
-            <ListFriends name='Evelyn' /> 70+
-            <ListFriends name='T-rex' />  70+
+            <ListFriends name='Evelyn' /> <h4> commited 75 € </h4>
+            <ListFriends name='T-rex' /> <h4> commited 75 € </h4>
             <br />
             <Link to={ '/step-3' }><div className='form-group btn btn-success btn-lg'>Settle!</div></Link>
           </div>
