@@ -6,6 +6,10 @@ import ListFriends from './_listFriends';
 class Step3 extends React.Component {
   render() {
     return (
+      <div>
+        <div>
+          <Navbar />
+        </div>
       <div className='step-3'>
         <div className='settlement'>
           <p>Hint: Click on them to read more</p>
@@ -24,6 +28,7 @@ class Step3 extends React.Component {
             <button className='btn btn-success btn-lg'>Review and accept</button>
           </div>
         </div>
+      </div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 // components
+import Navbar from '../navbar/_navbar';
 import ListFriends from './_listFriends';
 
 class Step2 extends React.Component {
@@ -16,6 +17,17 @@ class Step2 extends React.Component {
 
   render() {
     return (
+      <div>
+        <div>
+          <Navbar />
+        </div>
+      <div className="row">
+       <div className="col-md-2">
+       </div>
+       <div className="col-md-8">
+       <div className="infoBoxes">
+       </div>
+
       <div className='step-2'>
         <div className='mainEvent'>
           <p>Closest stations provided by DB API</p>
@@ -33,10 +45,14 @@ class Step2 extends React.Component {
             2016-10-13
             <ListFriends name='Test3' /> 14
             <ListFriends name='Test4' /> 18
-            <Link to={ '/step-3' }><div className='btn btn-success btn-lg'>Settle!</div></Link>
+            <br />
+            <Link to={ '/step-3' }><div className='form-group btn btn-success btn-lg'>Settle!</div></Link>
           </div>
         </div>
       </div>
+      </div>
+    </div>
+    </div>
     );
   }
 
