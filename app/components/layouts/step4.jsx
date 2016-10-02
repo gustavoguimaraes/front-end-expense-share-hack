@@ -6,8 +6,22 @@ const Step4 = () => {
   return (
     <div>
       <Navbar />
-      <h1>SUCCESS!</h1>
+
+      <div className="row">
+       <div className="col-md-2">
+       </div>
+       <div className="col-md-8">
+       <div className="infoBoxes">
+       </div>
+      <h1>SUCCESS! :)</h1>
+      <div className="alert alert-success">
+        <h3>Your debts are now settled and automatically transfered to your accounts!</h3>
+        <h3>Happy traveling in the future </h3>
+      </div>
     </div>
+    </div>
+    </div>
+
   );
 };
 
