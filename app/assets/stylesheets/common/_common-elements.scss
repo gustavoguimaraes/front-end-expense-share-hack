@@ -44,7 +44,7 @@ height: 1500px;
 
 .mainEvent {
   border-radius:  5px;
-  border: 3px navy solid;
+  border: 2px navy dashed;
   padding: 10px;
   font-family: 'FrutigerLTW02-55Roman', 'Arial', 'sans-serif';
   font-weight: bold;
@@ -97,6 +97,7 @@ h1 {
   text-align: center;
   width: 40px;
   height: 35px;
+  margin-left: 100px;
 }
 
 .form-control {
