@@ -19,6 +19,8 @@ const Step3 = () => {
           </div>
           <div className='step-3'>
             <div className='settlement'>
+            <div className="row">
+            <div className="col-md-6 col-md-offset-3">
               <h3>You have traveled to: <b className='travelInfoLink'>Berlin</b></h3>
               <div>
                 <h2>Select amount</h2>
@@ -35,6 +37,8 @@ const Step3 = () => {
                 </div>
               </div>
             </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
