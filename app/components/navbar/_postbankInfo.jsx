@@ -15,6 +15,10 @@ class PostBankInfo extends React.Component {
   }
 
   render() {
+    if (!this.props.postbank.get('data')) {
+      return <div>Loading...</div>;
+    }
+
     const pbData = this.props.postbank.get('data');
     const accountOne = pbData.get('accounts').get('0');
 

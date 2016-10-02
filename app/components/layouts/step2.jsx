@@ -5,17 +5,28 @@ import { Link } from 'react-router';
 import ListFriends from './_listFriends';
 
 class Step2 extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showIframe: false
+    };
+  }
+
   render() {
     return (
       <div className='step-2'>
         <div className='mainEvent'>
+          <div onMouseOver={ this._handleIframe }> Hover Here </div>
+
           <p>Closest stations provided by DB API</p>
           <p>Hint: Click on them to read more</p>
-          <h3>You have decided to travel to: <b className='travelInfoLink'>Berlin</b></h3>
+          { this.renderIframe() }
+          <h3>You have decided to travel to: <strong className='travelInfoLink'>Berlin</strong></h3>
+          <div>
 
-          <iframe className='travelInfo' src='http://www.css3.se/2016/10/01/info-about-berlin-css-meetups/'>
-          </iframe>
-
+          </div>
           <div>
             <h2>Select amount</h2>
             <label>Total budget 150 € :</label>
@@ -29,6 +40,56 @@ class Step2 extends React.Component {
         </div>
       </div>
     );
+  }
+
+// private
+  _handleIframe = this._handleIframe.bind(this);
+  _handleIframe() {
+    this.setState({ showIframe: !this.state.showIframe });
+  }
+
+  renderIframe() {
+    if (this.state.showIframe) {
+      return <iframe className='travelInfo' src='http://www.css3.se/2016/10/01/info-about-berlin-css-meetups/'></iframe>;
+    }
+    return false;
+  }
+
+  berlinTrainStationData() {
+    return {
+      StopLocation: [
+        {
+          name: 'Berlin Hbf',
+          lon: '13.369548',
+          lat: '52.525589',
+          id: '008011160'
+        },
+        {
+          name: 'Berlin Südkreuz',
+          lon: '13.365314',
+          lat: '52.475042',
+          id: '008011113'
+        },
+        {
+          name: 'Berlin-Spandau',
+          lon: '13.197530',
+          lat: '52.534470',
+          id: '008010404'
+        },
+        {
+          name: 'Berlin Gesundbrunnen',
+          lon: '13.388515',
+          lat: '52.548961',
+          id: '008011102'
+        },
+        {
+          name: 'Berlin Ostbahnhof',
+          lon: '13.434567',
+          lat: '52.510972',
+          id: '008010255'
+        }
+      ]
+    };
   }
 }
 
