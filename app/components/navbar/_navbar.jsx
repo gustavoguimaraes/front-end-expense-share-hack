@@ -2,6 +2,7 @@ import React from 'react';
 
 // components:
 import NavDropdown from './_nav-dropdown';
+import PostBankInfo from './_postbankInfo';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -25,13 +26,12 @@ class Navbar extends React.Component {
           <div className='caret' />
           { this.renderDropdown() }
         </div>
+        <PostBankInfo />
       </div>
-
     );
   }
 
-  // private
-
+// private
   _handleDropdown() {
     this.setState({ showDropdown: !this.state.showDropdown });
   }

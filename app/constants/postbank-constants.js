@@ -1,0 +1,1 @@
+export const POSTBANK_FETCH = 'POSTBANK_FETCH';
