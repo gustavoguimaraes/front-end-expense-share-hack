@@ -19,8 +19,7 @@ class Navbar extends React.Component {
         <div className='navbar-user-section' onMouseEnter={ this._handleDropdown } onMouseLeave={ this._handleDropdown } >
           <div className='avatar-round-micro' />
           <div>
-            <div>Test</div>
-            <div>Administrator</div>
+            <div>Your account</div>
           </div>
           <div className='caret' />
           { this.renderDropdown() }

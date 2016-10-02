@@ -29,14 +29,14 @@ const Dashboard = () => {
      <div className='mainEvent'>
      <div className="infoBoxes">
      <span className="glyphicon glyphicon-check">
-</span><span>  Share cost with friends</span>
+</span><span>  Share cost with friends</span><br />
      <span className="glyphicon glyphicon-check">
-</span><span>Transparent overview of expenses</span>
+</span><span>Transparent overview of expenses</span><br />
 
 
      <span className="glyphicon glyphicon-check">
 </span><span>Settle debts and surplus funds automatically with Postbank API</span>
-</div>
+</div><br />
      <div className="row">
      <div className="col-md-6 col-md-offset-3">
               <h1>Create an event to share expenses with your friends</h1>
