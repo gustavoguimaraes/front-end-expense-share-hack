@@ -1,5 +1,8 @@
 // common elements, for example buttons, inputs etc.
+body {
+color: black;
 
+}
 .caret {
   display: inline-block;
   width: 0;
@@ -32,11 +35,9 @@
 }
 
 .mainEvent {
-  position: absolute;
-  right: 30px;
-  display: inline-block;
-  height: 400px;
-  border: dashed green;
+  border-radius:  5px;
+  border: 3px lightgrey solid;
+  padding: 10px;
 }
 
 .friendsList {
@@ -51,4 +52,26 @@ li {
 .participants {
   position: absolute;
   left: 421px;
+}
+
+
+iframe {
+ height: 600px;
+ width: 600px;
+
+}
+
+
+.travelInfo {
+}
+
+.travelInfoLink:hover > iframe {
+  display: block;
+  color: red;
+
+}
+
+h1 {
+
+  font-family:  Helvetica;
 }

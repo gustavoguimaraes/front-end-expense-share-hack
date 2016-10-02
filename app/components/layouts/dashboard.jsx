@@ -25,24 +25,31 @@ const Dashboard = () => {
        <DashboardListFriends name='Test4' />
      </div>
      </div>
-     <div className="col-md-8">
+     <div className="col-md-8 ">
      <div className='mainEvent'>
-              <p>Create event!</p>
-              <div>
+     <div className="row">
+     <div className="col-md-6 col-md-offset-3">
+              <h1>Create event!</h1>
                 <h2>Select amount</h2>
                 <label>Sum € :</label>
-
-                <input type='text' />
+                <input className="form-control" type='text' />
+                </div>
+                <div className="row">
+                <div className="col-md-6 col-md-offset-3">
                 <h2>Where are you going</h2>
                 <label>Location</label>
-                <input type='text' />
+                <input className="form-control" type='text' />
                 <label>Start date</label>
-                <input type='date' />
-
+                <input className="form-control" type='date' />
                 <label>Settle date</label>
-                <input type='date' />
+                <input  className="form-control"  type='date' />
+                <br />
                 <button className='btn btn-success btn-lg'>Create!</button>
+                </div>
+
               </div>
+              </div>
+
             </div>
 
      </div>
