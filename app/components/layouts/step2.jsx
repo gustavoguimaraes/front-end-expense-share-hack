@@ -18,14 +18,12 @@ class Step2 extends React.Component {
     return (
       <div className='step-2'>
         <div className='mainEvent'>
-          <div onMouseOver={ this._handleIframe }> Hover Here </div>
-
           <p>Closest stations provided by DB API</p>
           <p>Hint: Click on them to read more</p>
           { this.renderIframe() }
           <h3>You have decided to travel to: <strong className='travelInfoLink'>Berlin</strong></h3>
           <div>
-
+            { this.renderStations() }
           </div>
           <div>
             <h2>Select amount</h2>
@@ -53,6 +51,14 @@ class Step2 extends React.Component {
       return <iframe className='travelInfo' src='http://www.css3.se/2016/10/01/info-about-berlin-css-meetups/'></iframe>;
     }
     return false;
+  }
+
+  renderStations() {
+    const arr = this.berlinTrainStationData().StopLocation;
+
+    return arr.map((el) => {
+      return <h3 key={ el.id } onMouseOver={ this._handleIframe }>{ el.name }</h3>;
+    });
   }
 
   berlinTrainStationData() {
