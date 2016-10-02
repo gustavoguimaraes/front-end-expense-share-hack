@@ -39,10 +39,7 @@ const Step1 = () => {
    <div className="row">
    <div className="col-md-6 col-md-offset-3">
             <h1>Create an event to share expenses with your friends</h1>
-
-
-
-              <h2>Select amount</h2>
+            <h2>Select amount</h2>
               <label>Sum € :</label>
               <input className="form-control" type='text' />
               </div>
@@ -61,7 +58,7 @@ const Step1 = () => {
               </div>
 
             </div>
-          
+
           </div>
         </div>
         </div>
