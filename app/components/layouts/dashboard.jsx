@@ -12,81 +12,47 @@ const Dashboard = () => {
         <Navbar />
       </div>
       <div>
-        <div className='friendsList'>
-          <p>Friends list</p>
-          <DashboardListFriends name='Test1' />
-          <DashboardListFriends name='Test2' />
-          <DashboardListFriends name='Test3' />
-          <DashboardListFriends name='Test4' />
-        </div>
-        <div className='mainEvent'>
-          <p>Create event!</p>
-          <div>
-            <h2>Select amount</h2>
-            <label>Sum € :</label>
-
-            <input type='text' />
-            <h2>Where are you going</h2>
-            <label>Location</label>
-            <input type='text' />
-            <label>Start date</label>
-            <input type='date' />
-
-            <label>Settle date</label>
-            <input type='date' />
-            <button className='btn btn-success btn-lg'>Create!</button>
-          </div>
-        </div>
 
 
-      </div>
-      <div>
-        <div className='mainEvent'>
-          <p>Closest stations provided by DB API</p>
-          <p>Hint: Click on them to read more</p>
-          <h3>You have decided to travel to: <b className="travelInfoLink">Berlin</b></h3>
+    <div className="row">
+     <div className="col-md-2">
 
-          <iframe className="travelInfo" src="http://www.css3.se/2016/10/01/info-about-berlin-css-meetups/">
-          </iframe>
+     <div className='friendsList'>
+       <p>Friends list</p>
+       <DashboardListFriends name='Test1' />
+       <DashboardListFriends name='Test2' />
+       <DashboardListFriends name='Test3' />
+       <DashboardListFriends name='Test4' />
+     </div>
+     </div>
+     <div className="col-md-8">
+     <div className='mainEvent'>
+              <p>Create event!</p>
+              <div>
+                <h2>Select amount</h2>
+                <label>Sum € :</label>
 
-          <div>
-            <h2>Select amount</h2>
-            <label>Total budget 150 € :</label>
+                <input type='text' />
+                <h2>Where are you going</h2>
+                <label>Location</label>
+                <input type='text' />
+                <label>Start date</label>
+                <input type='date' />
 
+                <label>Settle date</label>
+                <input type='date' />
+                <button className='btn btn-success btn-lg'>Create!</button>
+              </div>
+            </div>
 
+     </div>
+     <div className="col-md-2">.col-md-4</div>
+   </div>
 
-            <label>Settle date</label>
-            2016-10-13
-            <DashboardListFriends name='Test3' /> 14
-            <DashboardListFriends name='Test4' /> 18
-            <button className='btn btn-success btn-lg'>Settle!</button>
-          </div>
-        </div>
 
 
       </div>
 
-      <div>
-        <div className='settlement'>
-          <p>Hint: Click on them to read more</p>
-          <h3>You have traveled to: <b className="travelInfoLink">Berlin</b></h3>
-        <div>
-            <h2>Select amount</h2>
-            <span>Total budget 150 € :</span>
-            <span>Total budget 130 € was spent</span>
-
-            <label>Settle date</label>
-            2016-10-13
-
-            Results:
-            <DashboardListFriends name='Test3' /> 10+
-            <DashboardListFriends name='Test4' /> 10+
-            <button className='btn btn-success btn-lg'>Review and accept</button>
-          </div>
-        </div>
-
-
-      </div>
     </div>
   );
 };
