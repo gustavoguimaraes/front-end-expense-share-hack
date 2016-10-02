@@ -46,12 +46,14 @@ height: 1500px;
   border-radius:  5px;
   border: 3px navy solid;
   padding: 10px;
+  font-family: 'FrutigerLTW02-55Roman', 'Arial', 'sans-serif';
+  font-weight: bold;
 }
 
 .friendsList {
   width: auto;
   display: inline-block;
-  border:1px solid lightgrey;
+  border:1px solid navy;
   padding: 10px;
   margin-left: 10px;
 }
@@ -84,5 +86,33 @@ iframe {
 
 h1 {
 
-  font-family:  Helvetica;
+}
+
+
+.glyphicon-check {
+
+  color: #FFCC00;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 40px;
+  height: 35px;
+}
+
+.form-control {
+
+  padding: 5px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 24px;
+}
+
+.infoBoxes {
+font-size: 14px;
+background: url('/Users/jhildings/posthack/front-end-expense-share-hack/app/assets/img/pig.png');
+height: 300px;
+
 }

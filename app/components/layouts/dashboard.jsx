@@ -27,9 +27,22 @@ const Dashboard = () => {
      </div>
      <div className="col-md-8 ">
      <div className='mainEvent'>
+     <div className="infoBoxes">
+     <span className="glyphicon glyphicon-check">
+</span><span>  Share cost with friends</span>
+     <span className="glyphicon glyphicon-check">
+</span><span>Transparent overview of expenses</span>
+
+
+     <span className="glyphicon glyphicon-check">
+</span><span>Settle debts and surplus funds automatically with Postbank API</span>
+</div>
      <div className="row">
      <div className="col-md-6 col-md-offset-3">
               <h1>Create an event to share expenses with your friends</h1>
+
+
+
                 <h2>Select amount</h2>
                 <label>Sum € :</label>
                 <input className="form-control" type='text' />
@@ -53,7 +66,7 @@ const Dashboard = () => {
             </div>
 
      </div>
-     <div className="col-md-2">.col-md-4</div>
+     <div className="col-md-2"></div>
    </div>
 
 
