@@ -28,8 +28,8 @@ class PostBankInfo extends React.Component {
           { pbData.get('name') }
         </div>
         <div>
-          <p>Account Number: <span>{ accountOne.get('accountNumber') }</span></p>
-          <p>Funds: <span>{ accountOne.get('amount') }</span></p>
+          <p>Account Number: <span style={ { color: 'white' } }>{ accountOne.get('accountNumber') }</span></p>
+          <p>Funds: <span style={ { color: 'white' } }>{ accountOne.get('amount') }</span></p>
         </div>
       </div>
     );

@@ -15,9 +15,9 @@ class ListFriends extends React.Component {
   render() {
     return (
       <div>
-        <div className='participants'>
+        <ul className='participants'>
           { this.renderFriend() }
-        </div>
+        </ul>
         <div>
           <p>{ this.props.name }</p>
           <div className='avatar-round-micro-friend' onClick={ this._handleFriends }  />
