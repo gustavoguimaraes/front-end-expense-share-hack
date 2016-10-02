@@ -30,23 +30,27 @@ class Step2 extends React.Component {
 
       <div className='step-2'>
         <div className='mainEvent'>
+        <div className="row">
+        <div className="col-md-6 col-md-offset-3">
           <p>Closest stations provided by DB API</p>
           <p>Hint: Click on them to read more</p>
           { this.renderIframe() }
+
           <h3>You have decided to travel to: <strong className='travelInfoLink'>Berlin</strong></h3>
           <div>
             { this.renderStations() }
           </div>
           <div>
             <h2>Select amount</h2>
-            <label>Total budget 150 € :</label>
+            <h4>Total budget was: <b> 150 € </b></h4>
 
-            <label>Settle date</label>
-            2016-10-13
-            <ListFriends name='Test3' /> 14
-            <ListFriends name='Test4' /> 18
+            <h2>Settle date: 2016-10-13</h2>
+            <ListFriends name='Evelyn' /> 70+
+            <ListFriends name='T-rex' />  70+
             <br />
             <Link to={ '/step-3' }><div className='form-group btn btn-success btn-lg'>Settle!</div></Link>
+          </div>
+          </div>
           </div>
         </div>
       </div>
@@ -73,7 +77,7 @@ class Step2 extends React.Component {
     const arr = this.berlinTrainStationData().StopLocation;
 
     return arr.map((el) => {
-      return <h3 key={ el.id } onClick={ this._handleIframe }>{ el.name }</h3>;
+      return <h3 key={ el.id } onClick={ this._handleIframe }><span className="glyphicon glyphicon-map-marker"></span>{ el.name }</h3>;
     });
   }
 
