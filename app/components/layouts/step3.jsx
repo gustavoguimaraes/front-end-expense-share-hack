@@ -2,6 +2,8 @@ import React from 'react';
 
 // components
 import ListFriends from './_listFriends';
+import Navbar from '../navbar/_navbar';
+
 
 class Step3 extends React.Component {
   render() {
