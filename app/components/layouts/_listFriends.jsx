@@ -1,6 +1,6 @@
 import React from 'react';
 
-class DashboardListFriends extends React.Component {
+class ListFriends extends React.Component {
   static propTypes = {
     name: React.PropTypes.string
   }
@@ -38,4 +38,4 @@ class DashboardListFriends extends React.Component {
   }
 }
 
-export default DashboardListFriends;
+export default ListFriends;
