@@ -17,9 +17,9 @@ const Step1 = () => {
          <div className="col-md-2">
          <div className='friendsList'>
            <p>Friends list</p>
-           <ListFriends name='Friend 1' />
-           <ListFriends name='Friend 2' />
-           <ListFriends name='Friend 3' />
+           <ListFriends name='T-Rex' />
+           <ListFriends name='Evelyn' />
+           <ListFriends name='Tony Tiger' />
            <ListFriends name='Friend 4' />
          </div>
 </div>

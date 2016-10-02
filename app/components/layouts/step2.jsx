@@ -73,7 +73,7 @@ class Step2 extends React.Component {
     const arr = this.berlinTrainStationData().StopLocation;
 
     return arr.map((el) => {
-      return <h3 key={ el.id } onMouseOver={ this._handleIframe }>{ el.name }</h3>;
+      return <h3 key={ el.id } onClick={ this._handleIframe }>{ el.name }</h3>;
     });
   }
 
