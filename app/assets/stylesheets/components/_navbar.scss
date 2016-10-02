@@ -6,14 +6,19 @@
   span {
     color: $color-light;
   }
+  background-color: #FFCC00;
+
 }
 
 .navbar-header {
   font-size: 30px;
-  text-transform: uppercase;
   padding: 20px;
 }
 
+.firstLetter  {
+
+  color: blue !important;
+}
 .navbar-user-section {
   position: relative;
   @extend .flexbox-row-space-around;
